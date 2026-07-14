@@ -277,7 +277,9 @@ const WorkSlider = () => {
                         <div className="flex gap-x-2">
                           <div className="text-white/60">Tech Used - </div>
                           <div className="flex gap-x-2 text-2xl">
-                            {image.tech}
+                            {image.tech.map((icon, idx) => (
+                              <span key={idx}>{icon}</span>
+                            ))}
                           </div>
                         </div>
                         {/* links */}

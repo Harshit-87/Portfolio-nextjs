@@ -82,6 +82,10 @@ const aboutData = [
     title: "awards",
     info: [
       {
+        title: "Best Employee of the Year - Razorpay",
+        stage: "2025",
+      },
+      {
         title: "Web Development Hackathon - Winner",
         stage: "2022",
       },
@@ -254,10 +258,9 @@ const About = () => {
               return (
                 <div
                   key={itemIndex}
-                  className={`${
-                    index === itemIndex &&
+                  className={`${index === itemIndex &&
                     "text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300"
-                  } cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`} //z-indexxxxxxxxxxxxxx
+                    } cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`} //z-indexxxxxxxxxxxxxx
                   onClick={() => setIndex(itemIndex)}
                 >
                   {item.title}
@@ -302,20 +305,20 @@ const About = () => {
                       );
                     })}
                   </div>
-                  <div className="flex gap-x-4">
+                  <div className="flex gap-x-4 z-10 relative">
                     {/* Links */}
                     {item.resume?.map((link, itemIndex) => {
                       return (
-                        <div key={itemIndex} className="text-2xl text-white">
-                          <button
-                            className="hover:text-accent transition-all duration-300"
-                            onClick={(e) => {
-                              e.preventDefault();
-                              window.open("/Harshit_Srivastava.pdf", "_blank");
-                            }}
+                        <div key={itemIndex} className="text-2xl text-white flex items-center justify-center">
+                          <a
+                            href="/Harshit_Srivastava.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            download="Harshit_Srivastava.pdf"
+                            className="hover:text-accent transition-all duration-300 cursor-pointer flex items-center justify-center p-3 -m-3 min-w-[44px] min-h-[44px]"
                           >
                             {link}
-                          </button>
+                          </a>
                         </div>
                       );
                     })}

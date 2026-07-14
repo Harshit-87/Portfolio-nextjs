@@ -17,7 +17,7 @@ const Home = () => {
     <div className="bg-primary/60 h-full">
       {/* text */}
       <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
-        <div className="text-center flex flex-col justify-center xl:pt-40 xl:text-left h-full container mx-auto">
+        <div className="text-center flex flex-col justify-center xl:pt-40 xl:text-left h-full container mx-auto pb-20 xl:pb-0">
           {/* title */}
           <motion.h1
             variants={fadeIn("down", 0.2)}
@@ -37,9 +37,17 @@ const Home = () => {
             exit="hidden"
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-7 xl:mb-16"
           >
-            A full stack developer forging the future of technology through
-            code. Committed to excellence in crafting transformative virtual
-            experiences.
+            Solutions Engineer at{' '}
+            <span className="inline-block align-middle mx-1 relative w-[72px] h-[15px] sm:w-[85px] sm:h-[18px]">
+              <Image
+                src="/Razorpay_logo.svg"
+                alt="Razorpay"
+                fill
+                className="object-contain brightness-0 invert opacity-90"
+              />
+            </span>
+            , building scalable software, solving complex business challenges,
+            and driving technical leadership to create products that matter.
           </motion.p>
           {/* btn */}
           {/* z-indexxxxxxxxxxxxxxxxxxx */}
@@ -59,7 +67,7 @@ const Home = () => {
       </div>
 
       {/* Image */}
-      <div className="w-[1200px] h-full absolute right-0 bottom-0">
+      <div className="w-full xl:w-[1200px] h-full absolute right-0 bottom-0 overflow-hidden pointer-events-none">
         {/* bg img */}
         <div className="bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0"></div>
         {/* particles */}

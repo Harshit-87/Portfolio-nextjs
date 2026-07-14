@@ -22,9 +22,9 @@ const Services = () => {
               exit="hidden"
               className="h2 xl:mt-8"
             >
-              My Experiances <span className="text-accent">.</span>
+              My Experiences <span className="text-accent">.</span>
             </motion.h2>
-            <motion.p
+            {/* <motion.p
               variants={fadeIn("up", 0.4)}
               initial="hidden"
               animate="show"
@@ -33,7 +33,7 @@ const Services = () => {
             >
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
               ipsum dolor sit amet consectetur adipisicing elit.
-            </motion.p>
+            </motion.p> */}
           </div>
           {/* slider */}
           <motion.div

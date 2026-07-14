@@ -77,7 +77,7 @@ const Contact = () => {
 
   return (
     <div className="h-full bg-primary/30 xl:mt-0 -mt-1">
-      <div className="container mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full ">
+      <div className="container mx-auto pt-32 pb-8 md:py-32 text-center xl:text-left flex items-start xl:items-center justify-center h-full">
         {/* text & form */}
         <div className="flex flex-col w-full max-w-[700px]">
           {/* text */}
@@ -97,10 +97,10 @@ const Contact = () => {
             animate="show"
             exit={"hidden"}
             onSubmit={handleSubmit}
-            className="flex-1 flex flex-col gap-6 w-full mx-auto z-10"
+            className="flex-1 flex flex-col gap-4 md:gap-6 w-full mx-auto z-10"
           >
             {/* input group */}
-            <div className="flex gap-x-6 w-full">
+            <div className="flex flex-col md:flex-row gap-4 md:gap-6 w-full">
               <input
                 type="text"
                 placeholder="name"
@@ -138,11 +138,11 @@ const Contact = () => {
                 setMessage(e.target.value);
               }}
               required
-              className="textarea"
+              className="textarea h-[100px] md:h-[180px]"
             ></textarea>
             <button
               type="submit"
-              className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group"
+              className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group mx-auto xl:mx-0"
             >
               <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">
                 Let&apos;s talk
