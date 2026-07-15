@@ -22,7 +22,7 @@ import "swiper/css/autoplay";
 import { FreeMode, Pagination, Autoplay } from "swiper";
 
 // data
-const serviceData = [
+const experienceData = [
   {
     logo: "/Razorpay_logo.svg",
     company: "Razorpay",
@@ -62,7 +62,7 @@ const serviceData = [
   }
 ];
 
-const ServiceSlider = () => {
+const ExperienceSlider = () => {
   return (
     <Swiper
       breakpoints={{
@@ -91,7 +91,7 @@ const ServiceSlider = () => {
       modules={[FreeMode, Pagination, Autoplay]}
       className="h-[400px] sm:h-[430px]"
     >
-      {serviceData.map((item, index) => {
+      {experienceData.map((item, index) => {
         return (
           <SwiperSlide key={index}>
             <div className="bg-[rgba(65,47,123,0.15)] h-[360px] sm:h-[390px] rounded-xl p-5 flex flex-col justify-between group cursor-pointer hover:bg-[rgba(89,65,169,0.22)] border border-white/5 hover:border-accent/30 transition-all duration-300 select-none">
@@ -157,4 +157,4 @@ const ServiceSlider = () => {
   );
 };
 
-export default ServiceSlider;
+export default ExperienceSlider;

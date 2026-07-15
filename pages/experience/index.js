@@ -1,5 +1,5 @@
 //components
-import ServiceSlider from "../../components/ServiceSlider";
+import ExperienceSlider from "../../components/ExperienceSlider";
 import Bulb from "../../components/Bulb";
 import Circles from "../../components/Circles";
 
@@ -7,9 +7,9 @@ import Circles from "../../components/Circles";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
 
-const Services = () => {
+const Experience = () => {
   return (
-    <div className="h-full bg-primary/30 py-36 flex items-center">
+    <div className="h-full bg-primary/30 flex items-start xl:items-center pt-[120px] pb-[50px] xl:pt-36 xl:pb-36">
       <Circles />
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-x-8">
@@ -20,7 +20,7 @@ const Services = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="h2 xl:mt-8 pt-[3rem] md:pt-[4rem]"
+              className="h2 xl:mt-8"
             >
               My Experiences <span className="text-accent">.</span>
             </motion.h2>
@@ -43,7 +43,7 @@ const Services = () => {
             exit="hidden"
             className="w-full xl:max-w-[65%]"
           >
-            <ServiceSlider />
+            <ExperienceSlider />
           </motion.div>
         </div>
       </div>
@@ -52,4 +52,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Experience;
