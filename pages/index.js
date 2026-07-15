@@ -16,8 +16,8 @@ const Home = () => {
   return (
     <div className="bg-primary/60 h-full">
       {/* text */}
-      <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
-        <div className="text-center flex flex-col justify-center xl:pt-40 xl:text-left h-full container mx-auto pb-20 xl:pb-0">
+      <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10 overflow-y-auto">
+        <div className="text-center flex flex-col justify-start xl:justify-center pt-[7.5rem] md:pt-[8.125rem] xl:pt-40 xl:text-left h-full container mx-auto pb-[90px] xl:pb-0">
           {/* title */}
           <motion.h1
             variants={fadeIn("down", 0.2)}
@@ -27,7 +27,7 @@ const Home = () => {
             className="h1"
           >
             Transforming Ideas <br /> Into{" "}
-            <span className="text-accent">Digial Reality</span>
+            <span className="text-accent">Digital Reality</span>
           </motion.h1>
           {/* subtitle */}
           <motion.p
